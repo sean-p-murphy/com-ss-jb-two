@@ -22,6 +22,7 @@ public class TwoApplication {
 	public void inputGuess() {
 		Scanner sc = new Scanner(System.in);
 		int guess = sc.nextInt();
+		sc.close();
 		this.guessCount++;
 		if (this.guessCount > 5) {
 			this.giveUp();
